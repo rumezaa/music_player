@@ -1,0 +1,39 @@
+import the stuff I need
+create song and artists arraylist
+
+
+main METHOD:
+    call upon menu method to initiate gui
+
+menu METHOD:
+    create main screen to show text outputs (printed songs)
+    create panel for text input
+        add text input to panel
+        listen for "enter" key in text input
+            IF enter:
+                iterate over contents of text input
+                if text input contains the word print, show users songs ---> call print METHOD
+                if text input contains the word add, let user add songs to playlist ---> call add METHOD
+                if text input contains the word remove, let user remover songs from playlist ---> call remove METHOD
+
+    add panel to the frame
+
+
+remove METHOD takes param song:
+    split song input to get song and artist
+
+    check if artist and song in songs and artists array
+        IF in both arrays remove the song and artist from array
+
+add METHOD takes param song:
+    split song input to get song and artist
+    add song to songs array and artist to artists array
+
+
+print METHOD:
+    iterate over songs array ---> use index in each loop to access the location of artist in artist loop
+    print out ArtistName - SongName
+
+
+
+
